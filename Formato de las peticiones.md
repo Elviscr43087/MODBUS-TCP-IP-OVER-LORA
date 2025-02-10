@@ -6,24 +6,24 @@
 
 ### MODO (1 BYTE): Tipo de operación.
 
-0 = Lectura
+- 0 = Lectura
 
-1 = Escritura
+- 1 = Escritura
 
 ### TIPO (1 BYTE): Tipo de datos Modbus.
 
-0 = Coils
+- 0 = Coils
 
-1 = Holding Registers
+- 1 = Holding Registers
 
-DESDE (2 BYTES): Dirección inicial de la petición Modbus.
+### DESDE (2 BYTES): Dirección inicial de la petición Modbus.
 
-CANTIDAD (2 BYTES): Número de registros a leer o escribir.
+### CANTIDAD (2 BYTES): Número de registros a leer o escribir.
 
-VALOR (Opcional, solo para escritura): Datos a enviar.
+### VALOR (Opcional, solo para escritura): Datos a enviar.
 
-Hasta 30 registros.
+- Hasta 30 registros.
 
-2 BYTES por cada registro.
+- 2 BYTES por cada registro.
 
-CRC (2 BYTES): Código de verificación para la integridad del mensaje.
+### CRC (2 BYTES): Código de verificación para la integridad del mensaje.
