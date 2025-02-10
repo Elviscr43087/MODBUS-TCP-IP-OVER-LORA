@@ -1,16 +1,16 @@
-#Formato de las peticiones
+# Formato de las peticiones
 
-##El envio del mensaje se realiza con la siguiente estructura:
+## El envio del mensaje se realiza con la siguiente estructura:
 
-###ID (1 BYTE): Dirección Modbus del dispositivo.
+### ID (1 BYTE): Dirección Modbus del dispositivo.
 
-###MODO (1 BYTE): Tipo de operación.
+### MODO (1 BYTE): Tipo de operación.
 
 0 = Lectura
 
 1 = Escritura
 
-###TIPO (1 BYTE): Tipo de datos Modbus.
+### TIPO (1 BYTE): Tipo de datos Modbus.
 
 0 = Coils
 
