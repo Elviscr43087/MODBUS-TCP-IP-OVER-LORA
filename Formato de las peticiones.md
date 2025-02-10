@@ -27,3 +27,5 @@
 - 2 BYTES por cada registro.
 
 ### CRC (2 BYTES): Código de verificación para la integridad del mensaje.
+
+### (69 BYTES MAXIMO)
