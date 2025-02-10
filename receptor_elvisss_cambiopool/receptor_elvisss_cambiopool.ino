@@ -193,8 +193,8 @@ void enviarRespuestaLoRa(uint8_t id, uint8_t mode, uint8_t type, uint16_t from, 
     if (type == 1) {  // Holding Registers
       uint16_t* registers = (uint16_t*)data;
       for (int i = 0; i < quantity; i++) {
-        responseBuffer[index++] = highByte(registers[i]);
         responseBuffer[index++] = lowByte(registers[i]);
+        responseBuffer[index++] = highByte(registers[i]);
       }
     } else if (type == 0) {  // Coils
       bool* coils = (bool*)data;
